@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'dro';
+    src: url('fontes/IDroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+
+:root{
+    --cor0: #d7ffe9;
+    --cor1: #95ffc5;
+    --cor2: #3fb072;
+    --cor3: #1e6d42;
+    --cor4: #133e26;
+    --cor5: #02200f;
+
+    --fonte0: Arial, Verdana, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursiva;
+    --fonte2: 'Vina Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*..........................................................................................................*/
+
+body{
+    background-color: var(--cor3);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: white;
+    font: 3em var(--fonte1);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+header > p{
+    font: 1.2em var(--fonte0);
+    color: white;
+    max-width: 600px;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.281);
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+/*..........................................................................................................*/
+main{
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    
+    min-height: 310px;
+    max-width: 800px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte2);
+    /*font: normal bolder 1em var(--fonte2);*/
+}
+
+main h2{
+    color: var(--cor5);
+    font: 1.3em var(--fonte1);
+    text-indent: 8px;
+    background-color: #c5ebd6;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main a{
+    text-decoration: none;
+    font: bold;
+    color: var(--cor5);
+    background-color: #15f77b60;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: var(--cor2);
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+/*..........................................................................................................*/
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+    font-family: var(--fonte2);
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+/*..........................................................................................................*/
+
+a.externo::after{
+    content: '\1F517';
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*..........................................................................................................*/
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: var(--cor5);
+    padding: 10px 10px 20px 10px;;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #074e26;
+}
+
+footer a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
